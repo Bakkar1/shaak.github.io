@@ -17,7 +17,8 @@ tdList.forEach(elm => {
 })
 
 window.addEventListener('click', function(e){
-    if(myDataImg != null && e.target.getAttribute('class') != 'game-over'){       
+    if(myDataImg != null && e.target.getAttribute('class') != 'game-over' 
+    && myelm.getAttribute('data-team') != e.target.getAttribute('data-team')){       
         if(e.target.classList.contains('fa-chess-king')){
             var i = 0;
                 var nieuwIntervale = setInterval(function(){
@@ -56,6 +57,7 @@ window.addEventListener('click', function(e){
                 }, 100);
             }
             e.target.setAttribute('class' , myDataImg);
+            e.target.setAttribute('data-team', myelm.getAttribute('data-team'));
             myDataImg = null;
             myelm.setAttribute('class', 'full');
             myelm.parentNode.classList.remove('getFocus');

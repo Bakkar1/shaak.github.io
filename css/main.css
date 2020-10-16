@@ -11,7 +11,7 @@ body{
 .conatiner{   
 
     margin: 30px auto;
-
+    width: fit-content;
 }
 .wit{
     color: #ffffff;
