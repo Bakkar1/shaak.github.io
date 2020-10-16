@@ -11,7 +11,7 @@ body{
 .conatiner{   
 
     margin: 30px auto;
-    width: fit-content;
+
 }
 .wit{
     color: #ffffff;
@@ -55,8 +55,8 @@ table tr td{
     display: inline-block;
     font-size: 40px;
     border: 2px solid var(--overly-color);
-    width: 70px;
-    height: 65px;
+    width: 100px;
+    height: 100px;
     position: relative;
     transition: var(--default-transition);
     
