@@ -1,0 +1,87 @@
+body{
+    background-color: #DDD;
+}
+:root{
+    --overly-color: rgba(0, 0, 0, .3);
+    --default-color: #FFF;
+    --main-color: rgba(255, 152, 0, 1);
+    --default-transition: all .5s ease-in-out;
+    --default-padding: 50px 0;
+}
+.conatiner{   
+
+    margin: 30px auto;
+
+}
+.wit{
+    color: #ffffff;
+}
+.getFocus{
+    box-shadow: inset 5px 5px #333,
+        inset -5px -5px #333;
+}
+.childGetFocus{
+    transform: scale(.9) translate(-50%, -55%);
+}
+.full{
+    height: 100%;
+    width: 100%;
+}
+.red{
+    background-color: red !important;
+}
+.game-over{
+    position: fixed;
+    top: 0;
+    height: 0;
+    background-color: var(--overly-color);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-overp{
+    color: #F00;
+    font-size: 50px;
+    font-weight: bold;
+}
+table{
+    border: 2px solid var(--overly-color);
+    border-spacing: 0;
+}
+table tr td{
+    display: inline-block;
+    font-size: 40px;
+    border: 2px solid var(--overly-color);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: var(--default-transition);
+    
+}
+table tr:nth-child(even) td:nth-child(even){
+    background-color: var(--main-color);
+}
+table tr:nth-child(even) td:nth-child(odd){
+    background-color: var(--overly-color);
+}
+table tr:nth-child(odd) td:nth-child(odd){
+    background-color: var(--main-color);
+}
+table tr:nth-child(odd) td:nth-child(even){
+    background-color: var(--overly-color);
+}
+
+table tr td i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 50px;
+    min-height: 30%;
+    min-width: 30%;
+    transition: var(--default-transition);
+}
